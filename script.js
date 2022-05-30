@@ -20,9 +20,17 @@ const gfile = () => {
 	const rambo_2 = mots[getRandomInt(mots.length)];
 
 	document.querySelector(".output-filename").innerText = rambo_1 + '-' + rambo_2 + "." + randExt;
-	
+	window.document.title = rambo_1 + '-' + rambo_2 + "." + randExt;
+}
+
+const gjob = () => {
+
+	const rambo_1 = metiers[getRandomInt(metiers.length)];
+	const rambo_2 = metiers[getRandomInt(metiers.length)];
+
+	document.querySelector(".output-job").innerText = rambo_1 + '-' + rambo_2;
+	window.document.title = rambo_1 + '-' + rambo_2;
 }
 
 gfile();
-
-window.document.title = rambo_1 + '-' + rambo_2 + "." + randExt;
+gjob();
