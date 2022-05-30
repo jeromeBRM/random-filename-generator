@@ -28,8 +28,8 @@ const gjob = () => {
 	const rambo_1 = metiers[getRandomInt(metiers.length)];
 	const rambo_2 = metiers[getRandomInt(metiers.length)];
 
-	document.querySelector(".output-job").innerText = rambo_1 + '-' + rambo_2;
-	window.document.title = rambo_1 + '-' + rambo_2;
+	document.querySelector(".output-job").innerText = rambo_1 + ' - ' + rambo_2.toLowerCase();
+	window.document.title = rambo_1 + ' - ' + rambo_2.toLowerCase();
 }
 
 gfile();
